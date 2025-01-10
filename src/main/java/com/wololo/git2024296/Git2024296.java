@@ -4,6 +4,8 @@
 
 package com.wololo.git2024296;
 
+import inpututils.InputUtils;
+
 /**
  *
  * @author sanch
@@ -11,6 +13,21 @@ package com.wololo.git2024296;
 public class Git2024296 {
 
     public static void main(String[] args) {
-        System.out.println("Pablo Sanchez - student number: 2024296");
+        
+    //Inports InputUtils to the code
+    InputUtils myInput = new InputUtils();
+    
+    String  userName;
+    
+    //Ask User for input
+    userName = myInput.askUserForUserName("What is your name?");
+    
+        System.out.println("Your name is: " + userName);
+    
+
+     //Changes the input give
+    userName = myInput.userNameFewDifferences(userName);
+    
+        System.out.println(" Are you " + userName + " The Dragon Slayer");
     }
 }
